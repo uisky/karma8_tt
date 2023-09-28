@@ -1,0 +1,19 @@
+{
+    "name": "romakhin/karma8.test-task",
+    "description": "Karma8 Test Task",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Romakhin\\Karma8TestTask\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dmitry Romakhin",
+            "email": "romakhin@gmail.com"
+        }
+    ],
+    "require": {
+        "predis/predis": "^2.2"
+    }
+}
