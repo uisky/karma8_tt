@@ -200,6 +200,7 @@ $ ./notifier.php 1 3
 
 Проверить работу системы можно в таблице `notifier_log`. куда записываются отправленные письма:
 
+```sql
 SELECT
     u.*, from_unixtime(u.validts), log.*
 FROM users u
@@ -207,7 +208,7 @@ FROM users u
 WHERE 
     u.validts BETWEEN unix_timestamp(timestamp('2023-09-29 13:00:00')) AND unix_timestamp(timestamp('2023-09-29 14:00:00'))
 ORDER BY u.validts;
-
+```
 
 
 ## Титры
